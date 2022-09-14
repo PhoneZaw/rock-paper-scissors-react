@@ -1,13 +1,18 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-rock1 {
+    @apply bg-rock;
+}
+.bg-scissors1{
+    @apply bg-scissors;
+}
+.bg-paper1 {
+    @apply bg-paper;
+}
+.bg-action {
+    background-image: url("./assets/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
