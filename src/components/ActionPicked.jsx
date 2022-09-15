@@ -4,6 +4,7 @@ import ActionBtn from "./ActionBtn";
 import Button from "./Button";
 
 const ActionPicked = () => {
+  let flag = true;
   const {
     result,
     player1Action,
@@ -17,7 +18,11 @@ const ActionPicked = () => {
   };
 
   useEffect(() => {
-    calculateResult();
+    if (flag) {
+      calculateResult();
+      flag = false;
+    }
+    flag = false;
   }, []);
   return (
     <div className="flex justify-center items-center gap-16">
