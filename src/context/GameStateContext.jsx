@@ -25,7 +25,6 @@ const ContextProvider = ({ children }) => {
   };
 
   const calculateResult = () => {
-    console.log({ player1Action, player2Action });
     if (player1Action === player2Action) {
       setResult("D");
     } else if (player1Action === "rock") {
