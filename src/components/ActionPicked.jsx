@@ -28,20 +28,20 @@ const ActionPicked = () => {
     <div className="w-full flex flex-col justify-center items-center">
       <div className=" w-full max-w-4xl flex justify-between items-start gap-16">
         <div className="flex flex-col-reverse lg:flex-col justify-center items-center gap-6">
-          <h5 className=" uppercase text-xl text-white tracking-widest">
+          <h5 className=" uppercase text-xl text-center text-white tracking-widest">
             You Picked
           </h5>
           <ActionBtn big action={player1Action} />
         </div>
 
         <div className="flex flex-col-reverse lg:flex-col justify-center items-center gap-6">
-          <h5 className="uppercase text-xl text-white tracking-widest">
+          <h5 className="uppercase text-xl text-center text-white tracking-widest">
             The House Picked
           </h5>
           <ActionBtn big action={player2Action} />
         </div>
       </div>
-      <div className="lg:relative lg:bottom-40 ">
+      <div className="lg:relative lg:bottom-40">
         {/* <!-- Win/Lose State display --> */}
         {result === "W" ? (
           <div className="flex flex-col justify-center items-center ">

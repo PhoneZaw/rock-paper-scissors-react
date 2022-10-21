@@ -8,7 +8,7 @@ const App = () => {
   const { setIsRulesVisible, isPlaying } = useGameStateContext();
 
   return (
-    <main className="bg-radial min-h-screen px-8 py-8 font-barlow flex flex-col justify-between items-center">
+    <main className="bg-radial min-h-screen px-2  md:px-8 py-8 font-barlow flex flex-col justify-between items-center">
       <Header />
       {isPlaying ? <ActionPicked /> : <Actions />}
       <button
